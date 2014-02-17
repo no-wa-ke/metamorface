@@ -113,10 +113,10 @@
     <div id="content">
         <h2>metamor-face ultra beta</h2>
         <div id="container">
-            <video id="videoel" width="1000" height="750" preload="auto">
+            <video id="videoel" width="400" height="300" preload="auto">
             </video>
-            <canvas id="overlay" width="1000" height="750"></canvas>
-            <canvas id="webgl" width="1000" height="750"></canvas>
+            <canvas id="overlay" width="400" height="300"></canvas>
+            <canvas id="webgl" width="400" height="300"></canvas>
         </div>
         <br/>
         <div id="controls">
@@ -140,7 +140,7 @@
                 </a>to capture points of these faces. This app relies on webGL so you must use Chrome/Firefox or any other latest browser.</p>
             <p>If you liked this demo, you should <a href="http://www.twitter.com/matsiyatzy">follow matsiyatzy on twitter</a>!</p>
         </div>
-        <canvas id="webgl2" width="1000" height="750"></canvas>
+        <canvas id="webgl2" width="400" height="300"></canvas>
         <img id="prince" class="masks" src="media/prince1.jpg"></img>
         <img id="pamyu" class="masks" src="media/pamyu6.jpg"></img>
         <img id="nocchi1" class="masks" src="media/nocchi3.jpg"></img>
@@ -577,7 +577,7 @@
                     // get position of face
                     positions = ctrack.getCurrentPosition(vid);
 
-                    overlayCC.clearRect(0, 0, 1000, 750);
+                    overlayCC.clearRect(0, 0, 400, 300);
                     if (positions) {
                         // draw current grid
                         ctrack.draw(overlay);
@@ -651,7 +651,7 @@
                         positions[i][1] += 1;
                     }*/
 
-                    overlayCC.clearRect(0, 0, 1000, 750);
+                    overlayCC.clearRect(0, 0, 400, 300);
                     if (positions) {
                         // draw mask on top of face
                         fd.draw(positions);
